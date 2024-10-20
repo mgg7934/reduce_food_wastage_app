@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Information"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Card Number Input -->
+    <EditText
+        android:id="@+id/cardNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Cardholder Name Input -->
+    <EditText
+        android:id="@+id/cardHolderNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cardholder Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Expiration Date Input -->
+    <EditText
+        android:id="@+id/expirationDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiration Date (MM/YY)"
+        android:inputType="date"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+
+    <!-- CVV Input -->
+    <EditText
+        android:id="@+id/cvvInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVV"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Pay Now Button -->
+    <Button
+        android:id="@+id/payNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF0000"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
