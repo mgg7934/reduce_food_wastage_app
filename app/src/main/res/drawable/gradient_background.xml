@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#87CEEB"
+                android:endColor="#8B4513"
+                android:angle="270"/>  <!-- Gradient from top (blue) to bottom (brown) -->
+        </shape>
+    </item>
+</layer-list>
