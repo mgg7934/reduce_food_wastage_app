@@ -5,7 +5,18 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="#f7f7f7">
+    android:background="@drawable/gradient_background">
+
+    <!-- Forgot Password Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
 
     <!-- Email Input -->
     <EditText
@@ -14,6 +25,18 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="15"
         android:padding="12dp"
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="12dp"/>
@@ -47,16 +70,18 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#FFA500"
+        android:backgroundTint="#FF0000"
         android:padding="16dp"
         android:textStyle="bold"/>
+
     <!-- Login Link -->
     <TextView
         android:id="@+id/loginLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? Login"
-        android:textColor="#FFA500"
+        android:textColor="#FFFF00"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"/>

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="#f7f7f7">
+    android:background="@drawable/gradient_background">
 
     <!-- Email Input -->
     <EditText
@@ -30,44 +30,42 @@
         android:layout_marginBottom="20dp"/>
 
     <!-- Login Button -->
+
+    <!-- Sign Up Link (Centered) -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:padding="16dp"
         android:text="Login"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#FFA500"
-        android:padding="16dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
-    <!-- Horizontal Layout for Sign Up and Forgot Password Links -->
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/signUpLink"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="16dp">
+        android:text="Dont have an account yet? Sign Up"
+        android:textColor="#FFFF00"
+        android:textStyle="bold"
+        android:textSize="16sp"
 
-        <!-- Sign Up Link -->
-        <TextView
-            android:id="@+id/signUpLink"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="#FFA500"
-            android:textStyle="bold"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:clickable="true"/>
 
-        <!-- Forgot Password Link -->
-        <TextView
-            android:id="@+id/forgotPasswordLink"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot Password?"
-            android:textColor="#FFA500"
-            android:textStyle="bold"
-            android:clickable="true"/>
-    </LinearLayout>
+    <!-- Forgot Password Link (Centered) -->
+    <TextView
+        android:id="@+id/forgotPasswordLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#FFFF00"
+        android:textSize="16sp"
 
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="true"/>
 </LinearLayout>

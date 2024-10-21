@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SignupActivity extends AppCompatActivity {
 
-    private EditText emailInput, passwordInput, retypePasswordInput;
+    private EditText emailInput, phoneNumberInput, passwordInput, retypePasswordInput;
     private Button signupButton;
     private TextView loginLink;
 
@@ -22,6 +22,7 @@ public class SignupActivity extends AppCompatActivity {
 
         // Initialize UI elements
         emailInput = findViewById(R.id.emailInput);
+        phoneNumberInput = findViewById(R.id.phoneNumberInput);
         passwordInput = findViewById(R.id.passwordInput);
         retypePasswordInput = findViewById(R.id.retypePasswordInput);
         signupButton = findViewById(R.id.signupButton);
@@ -32,10 +33,11 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String email = emailInput.getText().toString();
+                String phoneNumber = phoneNumberInput.getText().toString();
                 String password = passwordInput.getText().toString();
                 String retypePassword = retypePasswordInput.getText().toString();
 
-                if (email.isEmpty() || password.isEmpty() || retypePassword.isEmpty()) {
+                if (email.isEmpty() || phoneNumber.isEmpty() || password.isEmpty() || retypePassword.isEmpty()) {
                     Toast.makeText(SignupActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 } else if (!password.equals(retypePassword)) {
                     Toast.makeText(SignupActivity.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
