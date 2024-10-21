@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CardView;
 import android.widget.Switch;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,35 +41,35 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-        cardPurchaseHistory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SettingsActivity.this, "Purchase History Clicked", Toast.LENGTH_SHORT).show();
-                // Navigate to PurchaseHistoryActivity
-                Intent intent = new Intent(SettingsActivity.this, PurchaseHistoryActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        cardSavedRecipes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SettingsActivity.this, "Saved Recipes Clicked", Toast.LENGTH_SHORT).show();
-                // Navigate to SavedRecipesActivity
-                Intent intent = new Intent(SettingsActivity.this, SavedRecipesActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        cardCustomerSupport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SettingsActivity.this, "Customer Support Clicked", Toast.LENGTH_SHORT).show();
-                // Navigate to CustomerSupportActivity
-                Intent intent = new Intent(SettingsActivity.this, CustomerSupportActivity.class);
-                startActivity(intent);
-            }
-        });
+//        cardPurchaseHistory.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(SettingsActivity.this, "Purchase History Clicked", Toast.LENGTH_SHORT).show();
+//                // Navigate to PurchaseHistoryActivity
+//                Intent intent = new Intent(SettingsActivity.this, PurchaseHistoryActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        cardSavedRecipes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(SettingsActivity.this, "Saved Recipes Clicked", Toast.LENGTH_SHORT).show();
+//                // Navigate to SavedRecipesActivity
+//                Intent intent = new Intent(SettingsActivity.this, SavedRecipesActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        cardCustomerSupport.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(SettingsActivity.this, "Customer Support Clicked", Toast.LENGTH_SHORT).show();
+//                // Navigate to CustomerSupportActivity
+//                Intent intent = new Intent(SettingsActivity.this, CustomerSupportActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         // Set click listener for Save Settings button
         saveSettingsButton.setOnClickListener(new View.OnClickListener() {

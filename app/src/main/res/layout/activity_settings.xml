@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/gradient_background"
     android:gravity="center">
@@ -14,7 +15,7 @@
         android:elevation="4dp"
         android:clickable="true"
         android:id="@+id/cardProfile"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:cardBackgroundColor="#4318FFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +30,8 @@
                 android:layout_weight="1"
                 android:text="Profile"
                 android:textSize="18sp"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -46,7 +48,7 @@
         android:elevation="4dp"
         android:clickable="true"
         android:id="@+id/cardPurchaseHistory"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:cardBackgroundColor="#4318FFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,7 +63,8 @@
                 android:layout_weight="1"
                 android:text="Purchase History"
                 android:textSize="18sp"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -78,7 +81,7 @@
         android:elevation="4dp"
         android:clickable="true"
         android:id="@+id/cardSavedRecipes"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:cardBackgroundColor="#4318FFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,7 +96,8 @@
                 android:layout_weight="1"
                 android:text="Saved Recipes"
                 android:textSize="18sp"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -110,7 +114,7 @@
         android:elevation="4dp"
         android:clickable="true"
         android:id="@+id/cardCustomerSupport"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:cardBackgroundColor="#4318FFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -125,7 +129,8 @@
                 android:layout_weight="1"
                 android:text="Customer Support/Feedback"
                 android:textSize="18sp"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -140,9 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:clickable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:background="@android:color/transparent"
-        android:cardElevation="0dp">
+        app:cardBackgroundColor="@color/cardview_shadow_start_color">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -157,7 +160,8 @@
                 android:layout_weight="1"
                 android:text="Notifications"
                 android:textSize="18sp"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
             <Switch
                 android:id="@+id/notificationSwitch"
@@ -173,9 +177,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:clickable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:cardElevation="0dp"
-        android:background="@android:color/transparent"> <!-- Fully transparent background -->
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -190,7 +193,8 @@
             android:layout_weight="1"
             android:text="Dark Mode"
             android:textSize="18sp"
-            android:textColor="#000000" />
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
 
         <Switch
             android:id="@+id/darkModeSwitch"

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Profile Picture (Optional) -->
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Profile Picture"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:textColor="#000000" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:textColor="#000000" />
+
+        <!-- Email (Editable) -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/phoneNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:textColor="#000000" />
+
+        <!-- Change Password -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Change Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:textColor="#000000" />
+
+        <!-- Address Dropdown -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp">
+
+            <!-- Address Dropdown -->
+            <Spinner
+                android:id="@+id/addressDropdown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+        <!-- Manage Payment TextView -->
+        <TextView
+            android:id="@+id/managePaymentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card details Here"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Save Profile Button -->
+        <Button
+            android:id="@+id/saveProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0000"
+            android:padding="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

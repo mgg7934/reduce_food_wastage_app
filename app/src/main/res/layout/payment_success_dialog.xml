@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <!-- Payment Successful Icon -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success"
+        android:contentDescription="Payment Successful"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Payment Success Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Done"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Success Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your payment has been successfully processed."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF0000"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_gravity="center" />
+</LinearLayout>
