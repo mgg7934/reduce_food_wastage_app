@@ -50,8 +50,12 @@ public class ProfileActivity extends AppCompatActivity {
                 if (validateInputs()) {
                     // Save profile logic here
                     Toast.makeText(ProfileActivity.this, "Profile Saved", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, SettingsActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(ProfileActivity.this, "Please fill in all required fields", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, SettingsActivity.class);
+                    startActivity(intent);
                 }
             }
         });
