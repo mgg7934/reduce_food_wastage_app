@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">reduce_food_wastage_app</string>
+    <string name="back_button_desc">Go back</string>
 </resources>

@@ -45,15 +45,15 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-//        cardPurchaseHistory.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(SettingsActivity.this, "Purchase History Clicked", Toast.LENGTH_SHORT).show();
-//                // Navigate to PurchaseHistoryActivity
-//                Intent intent = new Intent(SettingsActivity.this, PurchaseHistoryActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        cardPurchaseHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SettingsActivity.this, "Purchase History Clicked", Toast.LENGTH_SHORT).show();
+                // Navigate to PurchaseHistoryActivity
+                Intent intent = new Intent(SettingsActivity.this, PurchaseHistoryActivity.class);
+                startActivity(intent);
+            }
+        });
 //
 //        cardSavedRecipes.setOnClickListener(new View.OnClickListener() {
 //            @Override
