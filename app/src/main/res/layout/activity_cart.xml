@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Example CardView for Cart Item -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <!-- Image of the Ingredient (small) -->
+                <ImageView
+                    android:id="@+id/imageViewIngredient"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+
+                <!-- Title of the Ingredient, Cost, and Amount -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <!-- Title of the Ingredient -->
+                    <TextView
+                        android:id="@+id/textViewIngredientTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomatoes 5Kg"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <!-- Cost of the Ingredient -->
+                    <TextView
+                        android:id="@+id/textViewCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cost: $10.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="4dp" />
+
+                    <!-- Editable Amount -->
+                    <EditText
+                        android:id="@+id/editTextAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:inputType="number"
+                        android:hint="1"
+                        android:width="60dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <!-- Remove Button -->
+                <Button
+                    android:id="@+id/buttonRemove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#FF0000" /> <!-- Red background for remove button -->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <!-- Image of the Ingredient (small) -->
+                <ImageView
+                    android:id="@+id/imageViewIngredient2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+
+                <!-- Title of the Ingredient, Cost, and Amount -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <!-- Title of the Ingredient -->
+                    <TextView
+                        android:id="@+id/textViewIngredientTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chicken Teriyaki"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <!-- Cost of the Ingredient -->
+                    <TextView
+                        android:id="@+id/textViewCost2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cost: $15.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="4dp" />
+
+                    <!-- Editable Amount -->
+                    <EditText
+                        android:id="@+id/editTextAmount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:inputType="number"
+                        android:hint="1"
+                        android:width="60dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <!-- Remove Button -->
+                <Button
+                    android:id="@+id/buttonRemove2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#FF0000" /> <!-- Red background for remove button -->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Total Cost and Buttons at the same level -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="300dp"
+            android:gravity="center_vertical">
+
+            <!-- Total Cost -->
+            <TextView
+                android:id="@+id/textViewTotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total: $25.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="start" />
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#FF0000"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Proceed to Payment Button -->
+            <Button
+                android:id="@+id/buttonProceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed to Payment"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#4CAF50"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
