@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image of the Salad -->
+        <ImageView
+            android:id="@+id/imageViewSalad"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gradient_background" /> <!-- Replace with your salad image -->
+
+        <!-- Title of the Recipe -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fresh Garden Salad"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Ingredients Title -->
+        <TextView
+            android:id="@+id/textViewIngredientsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ingredients:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Ingredients List -->
+        <TextView
+            android:id="@+id/textViewIngredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="• 2 cups of mixed greens\n• 1/2 cucumber, sliced\n• 1/4 red onion, thinly sliced\n• Cherry tomatoes, halved\n• 1/4 cup of feta cheese\n• Olive oil and lemon juice for dressing"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+        <!-- Method Title -->
+        <TextView
+            android:id="@+id/textViewMethodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Method:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Method Description -->
+        <TextView
+            android:id="@+id/textViewMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1. In a large bowl, combine the mixed greens, cucumber, red onion, and cherry tomatoes.\n2. Drizzle with olive oil and lemon juice to taste.\n3. Sprinkle the feta cheese on top.\n4. Toss the salad gently and serve fresh."
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

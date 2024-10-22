@@ -38,7 +38,9 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="true"/>
-
+        <activity
+            android:name=".SavedRecipesActivity"
+            android:exported="true"/>
         <activity
             android:name=".PurchaseHistoryActivity"
             android:exported="true"/>

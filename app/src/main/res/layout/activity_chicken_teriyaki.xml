@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image of Chicken Teriyaki -->
+        <ImageView
+            android:id="@+id/imageViewChickenTeriyaki"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gradient_background" /> <!-- Replace with your Chicken Teriyaki image -->
+
+        <!-- Title of the Recipe -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Chicken Teriyaki"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Ingredients Title -->
+        <TextView
+            android:id="@+id/textViewIngredientsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ingredients:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Ingredients List -->
+        <TextView
+            android:id="@+id/textViewIngredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="• 4 boneless chicken thighs\n• 1/4 cup soy sauce\n• 2 tbsp mirin (sweet rice wine)\n• 1 tbsp sugar\n• 1 tbsp sake\n• 1 tbsp vegetable oil\n• Sesame seeds for garnish\n• Green onions for garnish"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+        <!-- Method Title -->
+        <TextView
+            android:id="@+id/textViewMethodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Method:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Method Description -->
+        <TextView
+            android:id="@+id/textViewMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1. In a bowl, mix the soy sauce, mirin, sugar, and sake.\n2. Heat the vegetable oil in a pan over medium heat.\n3. Cook the chicken thighs, skin-side down, until crispy and brown.\n4. Flip the chicken and cook for an additional 5 minutes.\n5. Pour the prepared teriyaki sauce into the pan and cook until it thickens and coats the chicken.\n6. Serve the chicken with sesame seeds and chopped green onions as garnish."
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

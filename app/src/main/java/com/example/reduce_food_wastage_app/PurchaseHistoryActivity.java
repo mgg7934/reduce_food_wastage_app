@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PurchaseHistoryActivity extends AppCompatActivity {
 
-    private TextView tvDownloadReceipt;
+    private TextView tvDownloadReceipt, tvDownloadReceipt2, tvDownloadReceipt3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,10 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_purchase_history);
 
         // Find the download receipt TextView
+
         tvDownloadReceipt = findViewById(R.id.tvDownloadReceipt);
+        tvDownloadReceipt2 = findViewById(R.id.tvDownloadReceipt2);
+        tvDownloadReceipt3 = findViewById(R.id.tvDownloadReceipt3);
 
         ImageButton backButton = findViewById(R.id.backButton);
 
@@ -32,6 +35,22 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
 
         // Set a click listener on the download receipt TextView
         tvDownloadReceipt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Show a toast message when the download receipt is clicked
+                Toast.makeText(PurchaseHistoryActivity.this, "Downloading receipt...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        tvDownloadReceipt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Show a toast message when the download receipt is clicked
+                Toast.makeText(PurchaseHistoryActivity.this, "Downloading receipt...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        tvDownloadReceipt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Show a toast message when the download receipt is clicked

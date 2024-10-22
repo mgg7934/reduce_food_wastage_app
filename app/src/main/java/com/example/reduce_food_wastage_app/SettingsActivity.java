@@ -55,15 +55,15 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 //
-//        cardSavedRecipes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(SettingsActivity.this, "Saved Recipes Clicked", Toast.LENGTH_SHORT).show();
-//                // Navigate to SavedRecipesActivity
-//                Intent intent = new Intent(SettingsActivity.this, SavedRecipesActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        cardSavedRecipes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SettingsActivity.this, "Saved Recipes Clicked", Toast.LENGTH_SHORT).show();
+                // Navigate to SavedRecipesActivity
+                Intent intent = new Intent(SettingsActivity.this, SavedRecipesActivity.class);
+                startActivity(intent);
+            }
+        });
 //
         cardCustomerSupport.setOnClickListener(new View.OnClickListener() {
             @Override
