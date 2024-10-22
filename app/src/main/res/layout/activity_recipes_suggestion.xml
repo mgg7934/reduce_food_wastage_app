@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipes suggestion from the ingredients chosen"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- GridLayout with 2 columns to display 2 card views side by side -->
+        <GridLayout
+            android:id="@+id/gridLayoutRecipes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:id="@+id/salad1"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgFood"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/gradient_background"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tvFoodTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salad"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/btnAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Added"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FF00FF48"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Example of a single recipe card (multiple will be dynamically added) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:id="@+id/ck1"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgFood2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/gradient_background"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tvFoodTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chicken teriyaki"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/btnAdd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Added"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#00FF48"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example of a single recipe card (multiple will be dynamically added) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:id="@+id/ck2"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgFood3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/gradient_background"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tvFoodTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chicken teriyaki"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/btnAdd3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Saved list"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFFF8800"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

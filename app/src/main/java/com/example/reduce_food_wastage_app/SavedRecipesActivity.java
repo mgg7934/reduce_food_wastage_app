@@ -16,7 +16,7 @@ import androidx.cardview.widget.CardView;
 
 public class SavedRecipesActivity extends AppCompatActivity {
 
-    private CardView cardview1, cardView2;
+    private CardView cardview1, cardview2;
     private Button btnRemove, btnRemove2;
 
     @Override
@@ -25,7 +25,7 @@ public class SavedRecipesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_saved_recipes);
 
         cardview1 = findViewById(R.id.cardview1);
-        cardView2 = findViewById(R.id.cardview2);
+        cardview2 = findViewById(R.id.cardview2);
         btnRemove = findViewById(R.id.btnRemove);
         btnRemove2 = findViewById(R.id.btnRemove2);
 
@@ -38,7 +38,7 @@ public class SavedRecipesActivity extends AppCompatActivity {
             }
         });
 
-        cardView2.setOnClickListener(new View.OnClickListener() {
+        cardview2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SavedRecipesActivity.this, "Profile Clicked", Toast.LENGTH_SHORT).show();
