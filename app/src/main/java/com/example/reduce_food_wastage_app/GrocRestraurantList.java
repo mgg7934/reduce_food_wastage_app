@@ -1,5 +1,6 @@
 package com.example.reduce_food_wastage_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -25,7 +26,8 @@ public class GrocRestraurantList extends AppCompatActivity {
         cardViewRestaurantA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(GrocRestraurantList.this, SurplusFoodActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -33,6 +35,8 @@ public class GrocRestraurantList extends AppCompatActivity {
         cardViewStoreB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(GrocRestraurantList.this, SurplusFoodActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -41,7 +45,8 @@ public class GrocRestraurantList extends AppCompatActivity {
         cardViewCafeC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(GrocRestraurantList.this, SurplusFoodActivity.class);
+                startActivity(intent);
             }
         });
     }
