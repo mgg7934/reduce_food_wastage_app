@@ -44,6 +44,8 @@ public class SignupActivity extends AppCompatActivity {
                 } else {
                     // Proceed with sign-up logic
                     Toast.makeText(SignupActivity.this, "Signup successful!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SignupActivity.this, DashboardActivity.class);
+                    startActivity(intent);
                 }
             }
         });

@@ -29,10 +29,10 @@
                 <!-- Image of the Ingredient (small) -->
                 <ImageView
                     android:id="@+id/imageViewIngredient"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/tomatoes" /> <!-- Replace with ingredient image -->
 
                 <!-- Title of the Ingredient, Cost, and Amount -->
                 <LinearLayout
@@ -103,10 +103,10 @@
                 <!-- Image of the Ingredient (small) -->
                 <ImageView
                     android:id="@+id/imageViewIngredient2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/chicken_teriyaki" /> <!-- Replace with ingredient image -->
 
                 <!-- Title of the Ingredient, Cost, and Amount -->
                 <LinearLayout
@@ -155,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Remove"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/white"
                     android:backgroundTint="#FF0000" /> <!-- Red background for remove button -->
 
             </LinearLayout>

@@ -31,7 +31,7 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/tomatoes" /> <!-- Replace with ingredient image -->
 
                 <!-- Ingredient Info -->
                 <LinearLayout
@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:text="Available: 10"
                         android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/black"
                         android:layout_marginTop="4dp" />
 
                     <!-- Cost -->
@@ -67,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cost: $5.00"
                         android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/black"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
@@ -77,7 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add to Cart"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/white"
                     android:backgroundTint="#4CAF50" /> <!-- Green background for add to cart -->
 
             </LinearLayout>
@@ -105,7 +105,7 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/carrots" /> <!-- Replace with ingredient image -->
 
                 <!-- Ingredient Info -->
                 <LinearLayout
@@ -131,7 +131,7 @@
                         android:layout_height="wrap_content"
                         android:text="Available: 15"
                         android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/black"
                         android:layout_marginTop="4dp" />
 
                     <!-- Cost -->
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cost: $3.00"
                         android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/black"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
@@ -151,7 +151,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add to Cart"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/white"
                     android:backgroundTint="#4CAF50" />
 
             </LinearLayout>
@@ -177,7 +177,7 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gradient_background" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/onions" /> <!-- Replace with ingredient image -->
 
                 <!-- Ingredient Info -->
                 <LinearLayout
@@ -203,7 +203,7 @@
                         android:layout_height="wrap_content"
                         android:text="Available: 20"
                         android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/black"
                         android:layout_marginTop="4dp" />
 
                     <!-- Cost -->
@@ -213,7 +213,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cost: $2.00"
                         android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/black"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
@@ -223,7 +223,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add to Cart"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/white"
                     android:backgroundTint="#4CAF50" />
 
             </LinearLayout>

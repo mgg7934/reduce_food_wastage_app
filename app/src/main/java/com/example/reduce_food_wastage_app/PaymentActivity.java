@@ -112,7 +112,7 @@ public class PaymentActivity extends AppCompatActivity {
 
     // Method to redirect to DashboardActivity
     private void redirectToDashboard() {
-        Intent intent = new Intent(PaymentActivity.this,SettingsActivity.class);
+        Intent intent = new Intent(PaymentActivity.this,DashboardActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);  // Clears the back stack
         startActivity(intent);
         finish();  // Ends the PaymentActivity

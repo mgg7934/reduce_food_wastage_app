@@ -15,7 +15,7 @@ public class GrocRestraurantList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_groc_restraurant_list);  // Link to XML layout
+        setContentView(R.layout.activity_groc_restraurant_list);
 
         // Initialize the CardViews
         cardViewRestaurantA = findViewById(R.id.cardViewRestaurantA);

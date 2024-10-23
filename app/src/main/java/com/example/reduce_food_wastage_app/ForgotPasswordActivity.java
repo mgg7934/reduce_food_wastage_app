@@ -30,7 +30,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 if (email.isEmpty()) {
                     Toast.makeText(ForgotPasswordActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Logic to send reset password link to email goes here
+                    // Logic to send reset password link to email
                     Toast.makeText(ForgotPasswordActivity.this, "Reset link sent to: " + email, Toast.LENGTH_SHORT).show();
                 }
             }

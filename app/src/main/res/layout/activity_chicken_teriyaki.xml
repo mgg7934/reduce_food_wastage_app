@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/gradient_background" /> <!-- Replace with your Chicken Teriyaki image -->
+            android:src="@drawable/chicken_teriyaki" /> <!-- Replace with your Chicken Teriyaki image -->
 
         <!-- Title of the Recipe -->
         <TextView

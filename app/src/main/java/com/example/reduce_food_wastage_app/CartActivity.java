@@ -15,7 +15,7 @@ public class CartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart);  // Link to your XML layout
+        setContentView(R.layout.activity_cart);
 
         cancelButton = findViewById(R.id.buttonCancel);  // Cancel button
         proceedButton = findViewById(R.id.buttonProceed);  // Proceed to Payment button
@@ -27,6 +27,8 @@ public class CartActivity extends AppCompatActivity {
                 Toast.makeText(CartActivity.this, "Cancelled", Toast.LENGTH_SHORT).show();
                 // Optionally finish the activity or clear the cart
                 finish();  // Close the activity when Cancel is pressed
+                Intent intent = new Intent(CartActivity.this, SurplusFoodActivity.class);
+                startActivity(intent);
             }
         });
 
