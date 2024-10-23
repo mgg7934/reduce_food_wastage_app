@@ -7,6 +7,17 @@
     android:gravity="center"
     android:background="@drawable/gradient_background">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
     <!-- Email Input -->
     <EditText
         android:id="@+id/emailInput"
@@ -15,6 +26,8 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="12dp"/>
 
@@ -25,6 +38,8 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:padding="12dp"
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="20dp"/>

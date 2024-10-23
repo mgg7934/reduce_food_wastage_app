@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -11,15 +10,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/titleText"
+        <ImageButton
+            android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recipes suggestion from the ingredients chosen"
-            android:textSize="24sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back_button_desc"
+            android:padding="10dp"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Suggestions"
+            android:textSize="50sp"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp" />
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
 
         <!-- GridLayout with 2 columns to display 2 card views side by side -->
         <GridLayout
@@ -36,17 +45,19 @@
                 android:layout_margin="8dp"
                 android:elevation="4dp"
                 android:id="@+id/salad1"
+                android:backgroundTint="@color/white"
                 android:layout_gravity="center">
 
                 <LinearLayout
-                    android:layout_width="140dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
+                    android:background="@color/white"
                     android:orientation="vertical"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/imgFood"
-                        android:layout_width="120dp"
+                        android:layout_width="150dp"
                         android:layout_height="120dp"
                         android:src="@drawable/salad"
                         android:scaleType="centerCrop"/>
@@ -57,6 +68,7 @@
                         android:layout_height="wrap_content"
                         android:text="Salad"
                         android:textSize="16sp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="8dp"
                         android:gravity="center"/>
 
@@ -75,24 +87,26 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!-- Example of a single recipe card (multiple will be dynamically added) -->
+            <!-- A  recipe card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:elevation="4dp"
                 android:id="@+id/ck1"
+                android:backgroundTint="@color/white"
                 android:layout_gravity="center">
 
                 <LinearLayout
-                    android:layout_width="140dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@color/white"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/imgFood2"
-                        android:layout_width="120dp"
+                        android:layout_width="150dp"
                         android:layout_height="120dp"
                         android:src="@drawable/chicken_teriyaki"
                         android:scaleType="centerCrop"/>
@@ -103,6 +117,7 @@
                         android:layout_height="wrap_content"
                         android:text="Chicken teriyaki"
                         android:textSize="16sp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="8dp"
                         android:gravity="center"/>
 
@@ -120,24 +135,26 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Example of a single recipe card (multiple will be dynamically added) -->
+            <!-- A  recipe card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:elevation="4dp"
                 android:id="@+id/ck2"
+                android:backgroundTint="@color/white"
                 android:layout_gravity="center">
 
                 <LinearLayout
-                    android:layout_width="140dp"
+                    android:layout_width="170dp"
+                    android:background="@color/white"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/imgFood3"
-                        android:layout_width="120dp"
+                        android:layout_width="150dp"
                         android:layout_height="120dp"
                         android:src="@drawable/chicken_teriyaki"
                         android:scaleType="centerCrop"/>
@@ -148,6 +165,7 @@
                         android:layout_height="wrap_content"
                         android:text="Chicken teriyaki"
                         android:textSize="16sp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="8dp"
                         android:gravity="center"/>
 

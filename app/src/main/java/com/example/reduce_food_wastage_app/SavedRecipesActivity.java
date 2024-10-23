@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,16 @@ public class SavedRecipesActivity extends AppCompatActivity {
         cardview2 = findViewById(R.id.cardview2);
         btnRemove = findViewById(R.id.btnRemove);
         btnRemove2 = findViewById(R.id.btnRemove2);
+
+        ImageButton backButton = findViewById(R.id.backButton);
+
+        // Set click listener to go back when clicked
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Go back to previous activity
+            }
+        });
 
         cardview1.setOnClickListener(new View.OnClickListener() {
             @Override

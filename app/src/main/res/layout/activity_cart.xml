@@ -9,10 +9,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-        <!-- Example CardView for Cart Item -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back_button_desc"
+            android:padding="10dp"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <!-- CardView for Cart Item -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp"
+                android:background="@color/white"
                 android:gravity="center_vertical">
 
                 <!-- Image of the Ingredient (small) -->
@@ -32,7 +54,7 @@
                     android:layout_width="70dp"
                     android:layout_height="90dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tomatoes" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/tomatoes" />
 
                 <!-- Title of the Ingredient, Cost, and Amount -->
                 <LinearLayout
@@ -69,6 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:inputType="number"
+                        android:textColorHint="@color/black"
                         android:hint="1"
                         android:width="60dp"
                         android:gravity="center"
@@ -97,6 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:background="@color/white"
                 android:padding="16dp"
                 android:gravity="center_vertical">
 
@@ -106,7 +130,7 @@
                     android:layout_width="70dp"
                     android:layout_height="90dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/chicken_teriyaki" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/chicken_teriyaki" />
 
                 <!-- Title of the Ingredient, Cost, and Amount -->
                 <LinearLayout
@@ -144,6 +168,7 @@
                         android:layout_marginTop="8dp"
                         android:inputType="number"
                         android:hint="1"
+                        android:textColorHint="@color/black"
                         android:width="60dp"
                         android:gravity="center"
                         android:textColor="@android:color/black" />
@@ -166,7 +191,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="200dp"
             android:gravity="center_vertical">
 
             <!-- Total Cost -->
@@ -199,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:text="Proceed to Payment"
                 android:textColor="@android:color/white"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#FF0000"
                 android:layout_gravity="end" />
 
         </LinearLayout>

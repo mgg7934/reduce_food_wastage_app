@@ -7,6 +7,17 @@
     android:background="@drawable/gradient_background"
     android:gravity="center">
 
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="@string/back_button_desc"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="left"/>
+
     <!-- CardView for Profile -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -16,6 +27,7 @@
         android:clickable="true"
         android:id="@+id/cardProfile"
         app:cardBackgroundColor="#4318FFFF">
+
 
         <LinearLayout
             android:layout_width="match_parent"

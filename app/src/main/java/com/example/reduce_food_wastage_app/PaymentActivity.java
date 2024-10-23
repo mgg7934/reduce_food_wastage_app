@@ -33,7 +33,10 @@ public class PaymentActivity extends AppCompatActivity {
         payNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validateInputs()) {
+                String expirationDate = expirationDateInput.getText().toString();
+
+                if (validateInputs() && expirationDate.matches("(0[1-9]|1[0-2])([0-9]{2})")
+                        || expirationDate.matches("(0[1-9]|1[0-2])/([0-9]{2})") ) {
                     // Show payment success popup
                     showPaymentSuccessDialog();
                 } else {
@@ -68,7 +71,8 @@ public class PaymentActivity extends AppCompatActivity {
             return false;
         }
 
-        if (TextUtils.isEmpty(expirationDate) || !expirationDate.matches("(0[1-9]|1[0-2])/([0-9]{2})")) {
+        if (TextUtils.isEmpty(expirationDate) || !expirationDate.matches("(0[1-9]|1[0-2])([0-9]{2})")
+                 && expirationDate.length()!=4)  {
             expirationDateInput.setError("Enter a valid expiration date (MM/YY)");
             return false;
         }

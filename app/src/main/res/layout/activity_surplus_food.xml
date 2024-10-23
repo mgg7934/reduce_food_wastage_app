@@ -11,6 +11,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back_button_desc"
+            android:padding="10dp"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surplus Food/ingredients"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
         <!-- First CardView -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -21,6 +41,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
@@ -31,7 +52,7 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tomatoes" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/tomatoes" />
 
                 <!-- Ingredient Info -->
                 <LinearLayout
@@ -83,8 +104,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Repeat for more CardViews -->
-
         <!-- Second CardView -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -95,6 +114,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
@@ -105,7 +125,7 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/carrots" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/carrots" />
 
                 <!-- Ingredient Info -->
                 <LinearLayout
@@ -151,7 +171,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add to Cart"
-                    android:textColor="@color/white"
+                    android:textColor="@android:color/white"
                     android:backgroundTint="#4CAF50" />
 
             </LinearLayout>
@@ -166,6 +186,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:background="@color/white"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
@@ -177,7 +198,7 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/onions" /> <!-- Replace with ingredient image -->
+                    android:src="@drawable/onions" />
 
                 <!-- Ingredient Info -->
                 <LinearLayout
@@ -223,7 +244,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add to Cart"
-                    android:textColor="@color/white"
+                    android:textColor="@android:color/white"
                     android:backgroundTint="#4CAF50" />
 
             </LinearLayout>

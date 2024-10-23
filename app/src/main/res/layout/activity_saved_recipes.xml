@@ -11,15 +11,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back_button_desc"
+            android:padding="10dp"
+            android:layout_margin="16dp"/>
+
         <TextView
-            android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saved Recipes"
-            android:textSize="24sp"
+            android:textSize="50sp"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp" />
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
 
         <!-- GridLayout with 2 columns to display 2 card views side by side -->
         <GridLayout
@@ -30,7 +40,7 @@
             android:rowCount="1"
             android:layout_gravity="center">
 
-            <!-- Example of a single recipe card (multiple will be dynamically added) -->
+            <!-- A  recipe card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
@@ -43,6 +53,7 @@
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@color/white"
                     android:padding="8dp">
 
                     <ImageView
@@ -76,7 +87,7 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!-- Example of a single recipe card (multiple will be dynamically added) -->
+            <!-- A  recipe card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
@@ -88,6 +99,7 @@
                 <LinearLayout
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
+                    android:background="@color/white"
                     android:orientation="vertical"
                     android:padding="8dp">
 

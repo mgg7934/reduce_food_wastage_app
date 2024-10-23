@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,16 @@ public class RecipesSuggestionActivity extends AppCompatActivity {
         btnAdd = findViewById(R.id.btnAdd);
         btnAdd2 = findViewById(R.id.btnAdd2);
         btnAdd3 = findViewById(R.id.btnAdd3);
+
+        ImageButton backButton = findViewById(R.id.backButton);
+
+        // Set click listener to go back when clicked
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Go back to previous activity
+            }
+        });
 
         toCardview1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +85,7 @@ public class RecipesSuggestionActivity extends AppCompatActivity {
             }
         });
 
-        btnAdd2.setOnClickListener(new View.OnClickListener() {
+        btnAdd3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(RecipesSuggestionActivity.this, "Added to Saved list", Toast.LENGTH_SHORT).show();

@@ -3,6 +3,7 @@ package com.example.reduce_food_wastage_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +22,17 @@ public class GrocRestraurantList extends AppCompatActivity {
         cardViewRestaurantA = findViewById(R.id.cardViewRestaurantA);
         cardViewStoreB = findViewById(R.id.cardViewStoreB);
         cardViewCafeC = findViewById(R.id.cardViewCafeC);
+
+        ImageButton backButton = findViewById(R.id.backButton);
+
+        // Set click listener to go back when clicked
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Go back to previous activity
+            }
+        });
+
 
         // Set click listener for Restaurant A CardView
         cardViewRestaurantA.setOnClickListener(new View.OnClickListener() {

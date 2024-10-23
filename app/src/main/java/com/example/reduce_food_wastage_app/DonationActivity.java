@@ -3,6 +3,7 @@ package com.example.reduce_food_wastage_app;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +21,16 @@ public class DonationActivity extends AppCompatActivity {
 
         buttonDonate1 = findViewById(R.id.buttonDonate);
         buttonDonate2 = findViewById(R.id.buttonDonate2);
+
+        ImageButton backButton = findViewById(R.id.backButton);
+
+        // Set click listener to go back when clicked
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Go back to previous activity
+            }
+        });
 
         // Set onClickListener for "Donate" button for Card 1
         buttonDonate1.setOnClickListener(new View.OnClickListener() {

@@ -3,6 +3,7 @@ package com.example.reduce_food_wastage_app;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,16 @@ public class SurplusFoodActivity extends AppCompatActivity {
         buttonAddToCart1 = findViewById(R.id.buttonAddToCart);
         buttonAddToCart2 = findViewById(R.id.buttonAddToCart2);
         buttonAddToCart3 = findViewById(R.id.buttonAddToCart3);
+
+        ImageButton backButton = findViewById(R.id.backButton);
+
+        // Set click listener to go back when clicked
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Go back to previous activity
+            }
+        });
 
         // Set onClickListener for "Add to Cart" button for Card 1
         buttonAddToCart1.setOnClickListener(new View.OnClickListener() {
