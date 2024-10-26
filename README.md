@@ -41,7 +41,7 @@ To clone this project, follow these steps:
 ## Running the App on an Emulator
 
 1. Once the project has been opened and built successfully, open the "AVD Manager" by clicking on the "Device Manager" icon in the top-right corner of Android Studio.
-2. If you don’t have a virtual device already, click on "Create Virtual Device" and follow the steps to set up a new Android Virtual Device (AVD). Choose a device model and the desired Android API version (preferably an API 31 (minimum)).
+2. If you don’t have a virtual device already, click on "Create Virtual Device" and follow the steps to set up a new Android Virtual Device (AVD). Choose a device model and the desired Android API version (has to be an API 31 (minimum) but the best will be Pixel 4A API 33).
 3. After the virtual device is set up, click the green "Run" button (a play icon) in Android Studio, or select "Run" -> "Run 'app'" from the menu.
 4. The app will now be compiled and launched on the emulator.
 
@@ -53,7 +53,7 @@ To clone this project, follow these steps:
 
 ## Running the app
 
-See the demo to understand better 
+See the demo to understand better.If you want to run the app in physical Android mobile device then an apk file of the app is in the documentation folder to be installed and run.
 
 
 
