@@ -4,6 +4,14 @@ This is an Android application designed to reduce food waste by connecting users
 
 ## Project Demo
 
+- full working demo using physical Android device 
+
+https://github.com/user-attachments/assets/e7e3fd04-6eb2-43e0-8ad1-b16001a97b1b
+
+- full working demo with errors showing using physical Android device 
+
+https://github.com/user-attachments/assets/410378fb-6614-4a5e-b969-68ff3ac21076
+
 
 ## Prerequisites
 
@@ -53,7 +61,7 @@ To clone this project, follow these steps:
 
 ## Running the app
 
-See the demo to understand better.If you want to run the app in physical Android mobile device then an apk file of the app is in the documentation folder to be installed and run.
+Refer to the demo the process. If you want to run the app in physical Android mobile device then an APK file of the app is in the documentation folder to be installed and run.
 
 
 
