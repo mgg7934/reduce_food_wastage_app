@@ -58,6 +58,9 @@
         <activity
             android:name=".SurplusFoodActivity"
             android:exported="true"/>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="true"/>
 
     </application>
 
